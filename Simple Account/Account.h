@@ -1,7 +1,5 @@
 #include <iostream>
-#include <fstream>
 #include <string>
-#include <cmath>
 using namespace std;
 
 class Account
@@ -18,6 +16,7 @@ public:
     string getAccount(){return Accout;}//获取账号
     string getpassw(){return password;}//获取密码
     float getbanlance(){return banlance;}//获取余额
+    bool transfer(string,string,float,Account);//转账
 
 private:
     string name;     // 姓名
